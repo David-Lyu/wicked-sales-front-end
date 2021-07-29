@@ -1,0 +1,108 @@
+.background {
+  background-image: url(./images/kiki-wang-TOc_JldXOX8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header {
+  margin-bottom: 20px;
+}
+header i {
+  margin-right: 10px;
+  margin-left: 10px
+}
+
+.logo {
+  position: relative;
+}
+
+.logo > * {
+  position: absolute;
+  left: 20%;
+}
+
+.custom-modal {
+  background-color: rgba(17, 17, 17, 0.5);
+  z-index: 2;
+}
+
+.custom-modal * {
+  z-index: 3;
+}
+
+.custom-modal label {
+  border: 1px solid red;
+  border-radius: 15px;
+  width: 33%;
+}
+
+.card {
+  margin: 20px 5px 0
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.on-hover {
+  border: 1px yellow solid;
+  color: blue;
+  background-color: yellowgreen;
+}
+
+footer a {
+  background-color: rgba(17, 17, 17, 0.3);
+}
+
+
+@media screen and (max-width: 500px) {
+  .custom-modal label {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  header > h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  header {
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
+
+  header div:first-child {
+    margin-top: 5px;;
+  }
+
+  header h1 {
+    font-size: 15px;
+  }
+
+  .mobile > :first-child{
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    max-width:100%;
+    flex: 100%  }
+}
+
+@media (min-width:1000px) {
+  img{
+    object-fit: contain;
+    height: 60%
+  }
+}
